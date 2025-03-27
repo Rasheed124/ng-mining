@@ -121,29 +121,7 @@ header.masthead .h1 {
 }
 
 /* ======================== HOME HERO  */
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
 
-  header.masthead h1,
-  header.masthead .h1 {
-    font-size: 3rem;
-  }
-
-  .masthead .masthead-images .left-image,
-  .masthead .masthead-images .right-image {
-    /* max-width: 300px; */
-    max-width: 360px;
-  }
-  .masthead .masthead-images .left-image {
-    left: -40px;
-  }
-  .masthead .masthead-images .right-image {
-    right: -50px;
-  }
-}
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
@@ -165,6 +143,10 @@ header.masthead .h1 {
   }
   .masthead .masthead-images .right-image {
     bottom: -50px;
+  }
+
+  .product-item .product-item-main{
+    padding: 18px;
   }
 }
 @media (min-width: 1560px) {
@@ -242,7 +224,7 @@ nav .nav-signin {
   color: var(---ng-secondary-five);
 }
 .product-item .product-item-main{
-  padding: 18px;
+  padding: 10px;
 }
 .product-item .product-item-body{
   padding: 9px 0px;
