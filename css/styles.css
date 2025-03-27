@@ -206,6 +206,7 @@ nav .nav-signin {
 }
 .product-main-box .product-box .similar-prod-title {
   font-size: 15px;
+  white-space: nowrap;
 }
 .product-main-box .product-box .similar-prod-title button {
   font-size: 10px;
@@ -452,7 +453,7 @@ nav .nav-signin {
     padding: 18px;
   }
   .product-main-box .product-box .similar-prod-title {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .product-main-box .product-box .similar-prod-title button {
