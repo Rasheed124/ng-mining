@@ -316,8 +316,9 @@ nav .nav-signin {
   margin-top: 10px;
 }
 .thumbnail-images img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
   object-fit: cover;
   border: 2px solid transparent;
   cursor: pointer;
@@ -330,7 +331,7 @@ nav .nav-signin {
 }
 
 .thumbnail-img.active {
-  border: 3px solid #007bff; /* Blue border when active */
+  border: 3px solid var(--ng-primary); /* Blue border when active */
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -340,9 +341,9 @@ nav .nav-signin {
   background: var(--ng-primary);
   color: white; /* White arrow color */
   border: none; /* Remove border */
-  width: 40px; /* Button size */
-  height: 40px;
-  padding: 8px 12px;
+  width: 45px; /* Button size */
+  height: 45px;
+  padding: 12px;
   border-radius: 50px;
   border: 1px solid #ddd;
   font-size: 18px;
@@ -354,10 +355,17 @@ nav .nav-signin {
 .swiper-button-next::after {
   display: none !important; /* Hide default arrow icons */
 }
+.custom-swiper-nav{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
 .custom-swiper-nav .swiper-button-prev i,
 .custom-swiper-nav .swiper-button-next i {
-  font-size: 16px; /* Reduce icon size */
+  font-size: 25px; /* Reduce icon size */
 }
 
 /* ====================FOOTER */
@@ -399,6 +407,10 @@ nav .nav-signin {
   .container {
     max-width: 1400px !important;
   }
+  .swiper-button-prev,
+.swiper-button-next{
+  top: -20px;
+}
 }
 
 .product-main-box .product-image .prod-badge {
@@ -430,6 +442,7 @@ nav .nav-signin {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  margin-top: 50px;
 }
 .product-main-box .product-content .prod-contact .like-btn {
   color: black;
