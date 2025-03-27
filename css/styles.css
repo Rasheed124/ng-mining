@@ -240,12 +240,15 @@ nav .nav-signin {
 .product-item .product-item-body .price span {
   color: var(---ng-secondary-five);
 }
+.product-item .product-item-body{
+  padding: 9px 0px;
+}
 
 .product-item .product-badge {
   top: 0.5rem;
   left: 0.5rem;
   font-size: 15px;
-  padding: 4px 10px;
+  padding: 3px 8px;
 }
 
 .product-main-box {
