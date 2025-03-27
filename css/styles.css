@@ -1,0 +1,297 @@
+/* global added styles */
+:root {
+  --ng-primary: #2c6942;
+  ---ng-secondary-one: #ee5858;
+  ---ng-secondary-two: #f2f4f5;
+  ---ng-secondary-three: #5f6c72;
+  ---ng-secondary-four: #2c694226;
+  --bs-purple: #6f42c1;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+.icon-fill {
+  color: var(--ng-primary);
+}
+.ng-desc-para {
+  color: var(---ng-secondary-three);
+}
+.ng-advert-bg {
+  background-color: var(---ng-secondary-four);
+}
+.advert-btn {
+  border: 0;
+  background-color: var(--ng-primary);
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 15px;
+}
+.ng-badge {
+  background-color: var(---ng-secondary-one);
+}
+.ng-bg-primary {
+  background-color: var(--ng-primary);
+}
+.ng-bg-secondary {
+  background-color: var(---ng-secondary-two);
+}
+.mt-10 {
+  margin-top: 6rem !important;
+}
+.ng-m-heading {
+  font-size: 18px;
+}
+
+.ng-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* ================= NAVBAR  */
+nav .nav-btn-tool {
+  border: none;
+  background-color: var(--ng-primary);
+  color: white;
+  border-radius: 30px;
+  padding: 18px;
+}
+
+nav .nav-signin {
+  border-right: 3px solid black;
+  /* padding-right: 10px; */
+}
+
+.product-main-box{
+  border-right: none;
+}
+
+.product-main-box .product-box .image img{
+  width: 100%;
+}
+
+
+
+/* ========================== ADD TOOL BOX */
+.add-stool {
+  background-color: white;
+  padding: 15px 25px;
+  color: black;
+  font-weight: bold;
+}
+.add-stool span {
+  padding: 20px;
+  background-color: var(--ng-primary);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+/* SIDEBAR ADS  */
+.ads-btn-details {
+  color: var(--ng-primary);
+  border: 1px solid var(--ng-primary);
+}
+.ads-btn-details:hover {
+  background-color: var(--ng-primary);
+  color: white;
+}
+.cat-btn {
+  border: 0;
+  border-radius: 15px;
+  padding: 16px;
+  text-transform: capitalize
+}
+
+/* ====================== Search Input Styling ============== */
+
+.search-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-input {
+  border-radius: 50px;
+  padding: 15px 0px;
+  padding-left: 40px;
+  border: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+/* ====================== PAGINATION ============== */
+.pagination-list {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.pagination-list-next,
+.pagination-list-prev {
+  border: 1px solid var(--ng-primary);
+  color: var(--ng-primary);
+}
+.pagination-list-next:hover,
+.pagination-list-prev:hover {
+  color: white;
+  background-color: var(--ng-primary);
+}
+.pagination-list.pagination-active {
+  color: white;
+  background-color: var(--ng-primary);
+}
+
+/* ===================================== SWIPER */
+
+.swiper {
+  width: 100%;
+}
+.swiper-slide img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+.thumbnail-container {
+  position: relative;
+  margin-top: 10px;
+}
+.thumbnail-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.thumbnail-images img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: border 0.3s ease-in-out;
+}
+.thumbnail-img {
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+}
+
+.thumbnail-img.active {
+  border: 3px solid #007bff; /* Blue border when active */
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: -40px;
+  transform: translateY(-50%);
+  background: var(--ng-primary);
+  color: white; /* White arrow color */
+  border: none; /* Remove border */
+  width: 40px; /* Button size */
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hide Default Swiper Icons */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none !important; /* Hide default arrow icons */
+}
+
+
+
+
+.custom-swiper-nav .swiper-button-prev i,
+.custom-swiper-nav .swiper-button-next i {
+  font-size: 16px; /* Reduce icon size */
+}
+
+
+
+/* ====================FOOTER */
+
+.footer-container {
+  background-color: var(--ng-primary);
+  padding: 0px 10px;
+
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  margin-top: 20px;
+}
+
+.footer-container ul li,
+.footer-p {
+  color: white;
+  opacity: 0.7;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+header.masthead:before {
+  content: "";
+  position: absolute;
+  background-color: #1c375e;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+header.masthead h1,
+header.masthead .h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+
+/* ================== NG CONTAINER SETTINGS */
+@media (min-width: 968px) {
+  .product-main-box .product-box .image img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  
+}
+@media (min-width: 1200px) {
+  /* Extra Large screens (xl) */
+  .container {
+    max-width: 1400px !important; /* Override Bootstrap */
+  }
+  .product-main-box{
+    border-right: 1px solid #5c646748;
+  }
+  
+}
+
+@media (min-width: 1400px) {
+  /* XXL screens */
+  .container {
+    max-width: 1400px !important;
+  }
+}
