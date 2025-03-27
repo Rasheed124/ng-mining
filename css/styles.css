@@ -178,7 +178,7 @@ nav .nav-signin {
   font-weight: 400;
 }
 .refine-cat .ads-widget {
-  margin-top: 18rem;
+  margin-top: 15rem;
 }
 
 .filter-header p span i {
@@ -188,6 +188,12 @@ nav .nav-signin {
 
 .product-item .product-item-body .price span {
   color: var(---ng-secondary-five);
+}
+.product-item .product-item-body .price span:first-of-type {
+  font-size: 14px;
+}
+.product-item .product-item-body .price span:last-of-type {
+  font-size: 10px;
 }
 .product-item .product-item-main {
   padding: 10px;
