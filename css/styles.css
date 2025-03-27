@@ -7,6 +7,7 @@
   ---ng-secondary-three: #5f6c72;
   ---ng-secondary-four: #2c694226;
   ---ng-secondary-five: #2da5f3;
+  ---ng-secondary-six: #2c69420d;
   --bs-purple: #6f42c1;
 }
 body {
@@ -23,7 +24,7 @@ body {
   color: var(---ng-secondary-three);
 }
 .ng-advert-bg {
-  background-color: var(---ng-secondary-four);
+  background-color: var(---ng-secondary-six);
 }
 .advert-btn {
   border: 0;
@@ -145,7 +146,7 @@ header.masthead .h1 {
     bottom: -50px;
   }
 
-  .product-item .product-item-main{
+  .product-item .product-item-main {
     padding: 18px;
   }
 }
@@ -211,22 +212,22 @@ nav .nav-signin {
   font-size: 17px;
   font-weight: 400;
 }
-.refine-cat .ads-widget{
+.refine-cat .ads-widget {
   margin-top: 18rem;
 }
 
- .filter-header p span i{
-  opacity: 0.5 ;
+.filter-header p span i {
+  opacity: 0.5;
   font-size: 16px;
 }
 
 .product-item .product-item-body .price span {
   color: var(---ng-secondary-five);
 }
-.product-item .product-item-main{
+.product-item .product-item-main {
   padding: 10px;
 }
-.product-item .product-item-body{
+.product-item .product-item-body {
   padding: 9px 0px;
 }
 
@@ -252,7 +253,7 @@ nav .nav-signin {
   color: black;
   font-weight: bold;
 }
-.add-stool-text{
+.add-stool-text {
   color: var(---ng-secondary-three);
 }
 .add-stool span {
@@ -398,4 +399,41 @@ nav .nav-signin {
   .container {
     max-width: 1400px !important;
   }
+}
+
+.product-main-box .product-image .prod-badge {
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 15px;
+  z-index: 50;
+  color: var(--ng-white);
+  padding: 7px 16px;
+  border-radius: 5px;
+}
+.prod-opacity {
+  opacity: 0.6;
+}
+.product-main-box .product-content .prod-heading {
+  font-weight: 400;
+  line-height: 33px;
+  padding-right: 30px;
+  letter-spacing: 0;
+  font-size: 20px;
+  /* max-width: 400px; */
+}
+.product-main-box .product-content .prod-cat {
+  border-top: 1px solid #6c757d4d;
+  padding-top: 10px;
+}
+.product-main-box .product-content .phone-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.product-main-box .product-content .prod-contact .like-btn {
+  color: black;
+}
+.product-main-box .product-content .prod-contact .like-btn:hover {
+  color: white;
 }
