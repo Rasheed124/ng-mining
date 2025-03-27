@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -38,7 +38,7 @@
   <body>
     <!-- Navigation-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg ng-bg-white">
       <div class="container">
         <a class="navbar-brand" href="#!">
           <img src="./assets/img/mining-logo.png" alt="" />
@@ -76,8 +76,8 @@
     </nav>
 
     <!-- Masthead-->
-    <header class="masthead">
-      <div class="container position-relative">
+    <header class="masthead" style="position: relative">
+      <div class="container position-relative masthead-container">
         <div class="row justify-content-center">
           <div class="search-container">
             <form class="position-relative">
@@ -92,7 +92,7 @@
         </div>
 
         <!-- ADD MOBILE TOOL -->
-        <div class="row mt-3 d-lg-none">
+        <div class="d-lg-none">
           <div class="add-stool-text">tool..</div>
           <div class="add-tool-box d-flex justify-content-center">
             <div
@@ -108,31 +108,63 @@
           </div>
         </div>
       </div>
+
+      <!-- HERO Images -->
+      <div class="masthead-images">
+        <!-- Left Image (Bottom Left) -->
+        <img
+          src="./assets/img/vehicle-2.png"
+          alt="Left Image"
+          class="left-image"
+        />
+
+        <!-- Right Image (Background) -->
+        <img
+          src="./assets/img/vehicle-1.png"
+          alt="Right Image"
+          class="right-image"
+        />
+      </div>
     </header>
 
     <!-- Page content-->
     <div class="container page-content-area mt-10">
       <div class="row">
         <!-- Side widgets-->
-        <div class="col-lg-3 d-none d-lg-block">
+        <div class="col-lg-3 d-none d-lg-block refine-cat">
           <!-- Heading -->
-          <h4 class="fw-bold">REFINE SEARCH</h4>
+          <h4 class="">REFINE SEARCH</h4>
           <!-- Search widget-->
           <div class="w-100">
             <div class="d-flex flex-column">
-              <button type="button" class="cat-btn ng-bg-secondary mb-3">
+              <button
+                type="button"
+                class="cat-btn ng-bg-secondary mb-3 w-100 d-flex justify-content-start align-items-start"
+              >
                 Select Category
               </button>
-              <button type="button" class="cat-btn ng-bg-secondary mb-3">
+              <button
+                type="button"
+                class="cat-btn ng-bg-secondary mb-3 w-100 d-flex justify-content-start align-items-start"
+              >
                 Classified types
               </button>
-              <button type="button" class="cat-btn ng-bg-secondary mb-3">
+              <button
+                type="button"
+                class="cat-btn ng-bg-secondary mb-3 w-100 d-flex justify-content-start align-items-start"
+              >
                 Make
               </button>
-              <button type="button" class="cat-btn ng-bg-secondary mb-3">
+              <button
+                type="button"
+                class="cat-btn ng-bg-secondary mb-3 w-100 d-flex justify-content-start align-items-start"
+              >
                 All region
               </button>
-              <button type="button" class="cat-btn ng-bg-secondary mb-3">
+              <button
+                type="button"
+                class="cat-btn ng-bg-secondary mb-3 w-100 d-flex justify-content-start align-items-start"
+              >
                 year of maufacture
               </button>
               <div class="d-flex gap-1 w-100 mb-3">
@@ -153,7 +185,7 @@
           </div>
 
           <!-- ADS widget-->
-          <div class="mt-10">
+          <div class="ads-widget">
             <div class="card h-100 px-2">
               <!-- Product image-->
               <div
@@ -178,9 +210,11 @@
 
                   <!-- Product price-->
                   <div class="d-flex align-items-center gap-1 mb-2">
-                    <span class="fs-6 text-primary fw-semibold">Only for:</span>
+                    <span class="fs-6 text-opacity-75 fw-semibold"
+                      >Only for:</span
+                    >
                     <span
-                      class="fs-6 fw-bold"
+                      class="fs-6 fw-medium"
                       style="background-color: #f3de6d; padding: 10px"
                       >$299 USD</span
                     >
@@ -191,13 +225,13 @@
                   >
                     <button
                       type="button"
-                      class="w-100 ng-bg-primary border-0 text-white text-uppercase fw-bold mb-3 p-3"
+                      class="w-100 ng-bg-primary border-0 text-white text-uppercase fw-medium mb-3 p-3"
                     >
                       <span><i class="bi bi-cart2 mr-2"></i></span> Add to Cart
                     </button>
                     <button
                       type="button"
-                      class="w-100 ads-btn-details text-uppercase fw-bold mb-3 p-3"
+                      class="w-100 ads-btn-details text-uppercase fw-medium mb-3 p-3"
                     >
                       view details <i class="bi bi-arrow-right"></i>
                     </button>
@@ -213,7 +247,7 @@
           <div
             class="ng-bg-secondary justify-content-between rounded p-2 px-3 mb-3 d-none d-lg-flex"
           >
-            <div class="d-flex mt-3 gap-3">
+            <div class="d-flex mt-3 gap-3 filter-header">
               <p class="fw-medium">Active Filters:</p>
 
               <p class="fw-semibold">
@@ -235,12 +269,11 @@
           <div
             class="row gx-4 gx-lg-3 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
           >
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -253,7 +286,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -265,7 +298,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -278,13 +311,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -297,12 +326,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -315,7 +343,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -327,7 +355,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -340,13 +368,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -359,12 +383,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -377,7 +400,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -389,7 +412,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -402,13 +425,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -421,12 +440,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -439,7 +457,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -451,7 +469,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -464,13 +482,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -483,12 +497,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -501,7 +514,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -513,7 +526,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -526,13 +539,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -545,12 +554,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -563,7 +571,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -575,7 +583,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -588,13 +596,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -607,12 +611,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -625,7 +628,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -637,7 +640,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -650,13 +653,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -669,12 +668,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -687,7 +685,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -699,7 +697,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -712,13 +710,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -731,12 +725,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -749,7 +742,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -761,7 +754,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -774,13 +767,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -793,12 +782,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -811,7 +799,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -823,7 +811,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -836,13 +824,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -855,12 +839,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -873,7 +856,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -885,7 +868,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -898,13 +881,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
@@ -917,12 +896,11 @@
                 </div>
               </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5 product-item">
               <div class="card h-100 px-2">
                 <!-- Sale badge-->
                 <div
-                  class="badge ng-badge text-white position-absolute"
-                  style="top: 0.5rem; left: 0.5rem; font-size: 15px"
+                  class="rounded product-badge ng-badge text-white position-absolute"
                 >
                   Hot
                 </div>
@@ -935,7 +913,7 @@
                   />
                 </a>
                 <!-- Product details-->
-                <div class="card-body">
+                <div class="card-body product-item-body">
                   <!-- Product reviews-->
                   <div class="d-flex gap-2 mb-2">
                     <div
@@ -947,7 +925,7 @@
                       <div class="bi-star-fill"></div>
                       <div class="bi-star-fill"></div>
                     </div>
-                    <span>(738)</span>
+                    <span class="fw-medium">(738)</span>
                   </div>
                   <div class="text-left">
                     <!-- Product name-->
@@ -960,13 +938,9 @@
                     </a>
 
                     <!-- Product price-->
-                    <div class="d-sm-flex justify-content-between mb-2">
-                      <span class="fs-6 text-primary fw-semibold"
-                        >N300,000</span
-                      >
-                      <span class="fs-6 text-primary fw-semibold"
-                        >FOR RENT</span
-                      >
+                    <div class="price d-sm-flex justify-content-between mb-2">
+                      <span class="fs-6 fw-semibold">N300,000</span>
+                      <span class="fs-6 fw-semibold">FOR RENT</span>
                     </div>
                     <!-- Product Location-->
                     <div class="d-flex justify-content-start gap-1">
