@@ -44,6 +44,7 @@ body {
 .mt-10 {
   margin-top: 6rem !important;
 }
+
 .ng-m-heading {
   font-size: 18px;
 }
@@ -239,6 +240,9 @@ nav .nav-signin {
 
 .product-item .product-item-body .price span {
   color: var(---ng-secondary-five);
+}
+.product-item .product-item-main{
+  padding: 18px;
 }
 .product-item .product-item-body{
   padding: 9px 0px;
