@@ -121,7 +121,6 @@ header.masthead .h1 {
   bottom: -20px;
 }
 
-
 /* ====================== Search Input Styling ============== */
 
 .search-container {
@@ -206,13 +205,13 @@ nav .nav-signin {
 .product-main-box .product-box .similar-prod-title {
   font-size: 15px;
 }
-.product-main-box .product-box .similar-prod-title button{
- font-size: 10px;
- background-color: var(--ng-primary);
- border: none;
- color: white;
- padding: 7px ;
- border-radius: 30px;
+.product-main-box .product-box .similar-prod-title button {
+  font-size: 10px;
+  background-color: var(--ng-primary);
+  border: none;
+  color: white;
+  padding: 7px;
+  border-radius: 30px;
 }
 
 /* ========================== ADD TOOL BOX */
@@ -324,7 +323,7 @@ nav .nav-signin {
 .swiper-button-next::after {
   display: none !important; /* Hide default arrow icons */
 }
-.custom-swiper-nav{
+.custom-swiper-nav {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -377,35 +376,12 @@ nav .nav-signin {
     max-width: 1400px !important;
   }
   .swiper-button-prev,
-.swiper-button-next{
-  top: -20px;
+  .swiper-button-next {
+    top: -20px;
+  }
 }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ====================================================== SINGLE PRODUCT PAGE */
 
 .product-main-box .product-image .prod-badge {
   top: 0.5rem;
@@ -445,8 +421,6 @@ nav .nav-signin {
   color: white;
 }
 
-
-
 /* ======================== HOME HERO  */
 
 @media (min-width: 768px) {
@@ -475,11 +449,13 @@ nav .nav-signin {
   .product-item .product-item-main {
     padding: 18px;
   }
+  .product-main-box .product-box .similar-prod-title {
+    font-size: 19px;
+  }
 
-  .product-main-box .product-box .similar-prod-title button{
+  .product-main-box .product-box .similar-prod-title button {
     font-size: 15px;
-   }
-   
+  }
 }
 @media (min-width: 1560px) {
   .masthead .masthead-images .left-image,
