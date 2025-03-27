@@ -170,12 +170,19 @@ nav .nav-signin {
 }
 
 .refine-cat .cat-btn {
-  border: 0;
+  border: none;
   border-radius: 15px;
   padding: 16px;
   text-transform: capitalize;
   font-size: 17px;
   font-weight: 400;
+
+}
+
+.refine-cat .cat-btn:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
 .refine-cat .ads-widget {
   margin-top: 15rem;
