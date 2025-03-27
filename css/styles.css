@@ -203,8 +203,11 @@ nav .nav-signin {
 .product-main-box .product-box .image img {
   width: 100%;
 }
+.product-main-box .product-box .similar-prod-title {
+  font-size: 15px;
+}
 .product-main-box .product-box .similar-prod-title button{
- font-size: 12px;
+ font-size: 10px;
  background-color: var(--ng-primary);
  border: none;
  color: white;
